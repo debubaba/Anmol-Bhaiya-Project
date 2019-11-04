@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Static Navbar</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .bs-example{
+        padding: 20px;
+        margin: 10px;
+    }
+
+.lol{
+	border-radius: 0%;
+}
+
+    .blank_row
+{
+    height: 25px !important; /* overwrites any other rules */
+    
+}
+
+
+
+    .banner {
+      width: 1380px;
+      padding: 10px;
+      border: 5px solid gray;
+      margin: 0;
+      height: 220px;
+      background-color: #8bcef0;
+      margin-top: 15px;
+    }
+td{
+  padding-left: 50px;
+}
+
+.bora{
+	text-align: center!important;
+}
+
+.headimg{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#heading{
+	font-weight: 650;
+}
+
+.gal{
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+}
+
+.container{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-width: 2px;
+	border-color: black;
+	border-style: bold;
+
+}
+
+.parallax{
+	background: url("images/back5.jpg") no-repeat center;
+	height: auto;
+	margin-left: -20%;
+	margin-right: -20%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.card{
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.boop{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 483px;
+	overflow: auto;
+	float: none;
+}
+
+.inpara{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.news{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: black;
+}
+
+.card-title{
+	font-size: 1em;
+}
+
+.card-text{
+	font-size: 0.9em;
+}
+
+.carousel{
+    background: #2f4357;
+    margin-top: 15px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 100px;
+    max-height: 480px;/* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.background{
+	background-image: url("images/J066.jpg");
+	width: 100%;
+	background-size: 100% 100%;
+	overflow: auto;
+}
+
+body {/*
+  background-color: #24bde3!important;*/
+   overflow: auto;
+   overflow-x: hidden;
+	 background-image: linear-gradient(to right, #baf5f0, #defffc);
+	 padding: 0px!important;
+   /*
+   filter: brightness(95%);*/
+}
+
+html{
+	padding-top: 0px!important;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+
+table, tbody, tr, th, td{
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.haji{
+
+    background-color: rgb(255,255,255, 0.7)!important;
+}
+
+.backcolor{/*
+	background-color: rgb(255,255,255, 0.6)!important;*/
+	background-image: url("images/back3.jpg");
+}
+.bleh{
+	background: url("images/back3.jpg") no-repeat center;
+}
+
+.mujo{
+	margin-bottom: 50px;
+}
+
+.menu {    z-index: 10;
+    position: relative;
+    height: auto;
+}
+
+
+
+.backs{
+	background: rgb(255,255,255, 0.9)!important;
+	border-top: none!important;
+	border-left: none!important;
+	border-right: none!important;
+}
+
+</style>
+</head>
+<body id="body">
+  <div class="bs-example menu">
+      <nav class="navbar navbar-expand-md navbar-light backs fixed-top" style="border: 1px solid black;" >
+          <a href="#home" class="navbar-brand active">Home</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav">
+
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Admission</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Staff</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Courses</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Education Zone</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+                  <a href="#" class="nav-item nav-link">Syllabus</a>
+                  <a href="#" class="nav-item nav-link">Notice</a>
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News & Events</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+                  <div class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Inbox</a>
+                          <a href="#" class="dropdown-item">Sent</a>
+                          <a href="#" class="dropdown-item">Drafts</a>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="navbar-nav">
+                  <a href="#" class="nav-item nav-link">Login</a>
+              </div>
+          </div>
+      </nav>
+
+<!--       <div class = "banner">
+       <table>
+        <tr>
+          <td rowspan="4"><img src = "123.jpeg" height="150" width="150"></td>
+          <td><h2>Swami Sahjanand Saraswati, B.ED College</h2></td>
+        </tr>
+        <tr>
+          <td><h6>Managed By SWAMI Sahjanand SARASWATI SEWA SAMAJ </h6></td>
+        </tr>
+        <tr>
+          <td><h6>Sector 8. Bokaro Steel City, Jharkhand. Pincode - 827009 </h6></td>
+        </tr>
+        <tr>
+          <td><h6>Reg No : 967/2008-09</h6></td>
+        </tr>
+      </table>
+ -->
+ <div class="background col-sm-12" style="width: 100%; margin-top: 30px; border: 1px solid black;">
+      <div class="jumbotron haji" style="margin-top: 30px;border: 1px solid black;">
+      	<div>
+      		<div class="col-xs-2 bora"><img src = "images/123.jpeg" height="100px" width="100px" style="padding: 7px 7px"> </div>
+      	<div class="col-xs-6">
+      		<div><h4 class="display-4 bora">Swami Sahjanand Saraswati, B.ED College</h4></div>
+      	</div>
+      	</div>
+      	
+      	<div>
+      		<p><h6 class="bora">Managed By SWAMI Sahjanand SARASWATI SEWA SAMAJ </h6></p>
+      		<!-- <hr class="my-4"> -->
+      		<p><h6 class="bora">Sector 8. Bokaro Steel City, Jharkhand. Pincode - 827009 </h6></p>
+      	</div>
+      	<div>
+      		<h6 class="bora">Reg No : 967/2008-09</h6>
+      	</div>
+      </div>
+  </div>
+<div class="row">
+      <div id="myCarousel" class="carousel slide backcolor col-lg-8 boop lol col-sm-12" data-ride="carousel" style="height: 483px; width: 400px">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/1234.jpeg" alt="First Slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/1234.jpeg" alt="Second Slide">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/1234.jpeg" alt="Third Slide">
+                  </div>
+              </div>
+              <!-- Carousel controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+
+<div class="card img-rounded backcolor col-lg-4 boop" id = "home" style="float: left; background-color: #e3f1ff; width: 100; height: 483; margin-top: 15px;border: 1px solid black;">
+  <div class="card-header">
+     <h3 style="color: #000000; text-align: center; margin: 0px; padding: 0px;">Announcements</h3>
+  </div>
+ <marquee style="height:833; width:100;" scrollamount="1" scrolldelay="30" loop  truespeed="truespeed" direction="up" >
+          <div style="border:1px solid black;width:100;height:483;overflow:scroll;overflow-y:auto;overflow-x:hidden;">
+<p style="height:300%;">
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+<br>
+</p>
+</div>
+</marquee >
+</div>
+
+</div>
+
+
+<!-- 
+<div id = "home" class="img-rounded" style="float: left; background-color: #e3f1ff; width: 1370px; height: 350px; border: 1px solid black; margin: 10px;">
+  <h3 style="color: #ffffff; background-color: #15317E; text-lign: center; margin: 0px; padding: 0px;">Announcements</h3>
+  <marquee style="height:300px; width:1370px;" scrollamount="1" scrolldelay="30" loop  truespeed="truespeed" direction="up" >
+          <div style="border:1px solid black;width:1380px;height:320px;overflow:scroll;overflow-y:auto;overflow-x:hidden;">
+<p style="height:300%;">
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+By using overflow-y, we can create scroll bars when the contents of this div are bigger/higher than the container. Also, by setting this paragraph to 250 percent, it is automatically 250 percent higher than the parent container - forcing an overflow.<br>
+<br>
+</p>
+</div>
+</marquee >
+</div> -->
+
+<div class="container" style="border: 1px solid black">
+	<div class="parallax row">
+		<div class="inpara">
+<div class="card col-md-5 col-sm-5 backcolor" style="width: 18rem; height: 630px;">
+  <img class="card-img-top" src="images/1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-envelope-square"></i>   Principal's Desk</h5>
+    <p class="card-text">“Education is most powerful weapon which you can use to change the world.” ---- Nelson Mandela. Today’s dreams are tomorrow’s success. Don’t be afraid of the high hopes or plans that seem to be out of reach. Life is meant to be experienced ...</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+
+<div class="card col-md-3 col-sm-6 backcolor" style="width: 16rem; height: 630px;">
+  <img class="card-img-top" src="images/2.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><i class="fas fa-pen"></i>   About Our College</h5>
+    <p class="card-text">Our B.Ed college was established on 18/06/2013.
+
+Governing Body of Swami Sahajanand Saraswati B.Ed College are as follows : 
+1. President : Dr. T.P. Singh
+
+2. Vice President : U.S.P. Singh
+
+3. Secretary : Shri Nand Kishore Rai
+
+4. Joint Secretary : Basudeo Singh Choudhary
+
+5. Treasurer : Shri B.K. Rai
+
+</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+
+<div class="card col-md-5 col-sm-12 backcolor" style="width: 23rem; height: 630px;">
+  <div class="card-body">
+    <h5 class="card-title"><i class="far fa-paper-plane"></i>   Latest News</h5>
+    <p class="card-text">
+    	<marquee style="height:300; width:300;" scrollamount="1" scrolldelay="30" loop  truespeed="truespeed" direction="up" >
+    	<div class="card news" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">28 March, 2019</h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.9rem">News 1</h6>
+            <p class="card-text" style="font-size: 0.85rem">Hua hoga kuch to</p>
+            <a href="#" class="card-link">Read More</a>
+          </div>
+        </div>
+
+        <div class="card news" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">29 March, 2019</h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.9rem">News 2</h6>
+            <p class="card-text" style="font-size: 0.85rem">Hua hoga aur bhi to kuch to</p>
+            
+          </div>
+        </div>
+
+        <div class="card news" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">30 March, 2019</h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.9rem">News 3</h6>
+            <p class="card-text" style="font-size: 0.85rem">Phirse hua hoga kuch</p>
+            
+          </div>
+        </div>
+
+        <div class="card news" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">31 March, 2019</h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.9rem">News 4</h6>
+            <p class="card-text" style="font-size: 0.85rem">whatever ab to</p>
+            
+          </div>
+        </div>
+        </marquee>
+    </p>
+  </div>
+</div>
+<div class="card col-sm-9 backcolor" style="width: 30rem;">
+  <div class="card-header">
+    <i class="far fa-bell"></i>   Notice Board
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+
+<div class="card col-sm-9 backcolor" style="width: 26rem">
+  <div class="card-header">
+    <i class="far fa-flag"></i>   Upcoming events
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container backcolor" style="border: 1px solid black; padding-top: 10px;padding-bottom: 10px;">
+<div class="row" style="padding-top: 10px">
+			<div class="col-xs-6" style="padding-left: 20px">
+				<img src="https://img.icons8.com/ios/420/camera.png" width="50px" height="50px" class="headimg">
+			</div>
+			<div class="col-xs-6">
+				<h1 id="heading">Image Gallery</h1>
+			</div>
+		</div>
+
+	<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<img src="https://images.unsplash.com/photo-1556290160-d006087340ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="gal">
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<img src="https://images.unsplash.com/photo-1556379092-dca659792591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="gal">
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<img src="https://images.unsplash.com/photo-1556401193-a9dda25073e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" class="gal">
+			</div>
+					
+			<div class="col-lg-12 bora" style="padding-top: 20px;">
+				<button type="button" class="btn btn-outline-primary">View Gallery</button>
+			</div>
+		</div>
+</div>
+
+
+
+</div>
+
+<table class="bleh" style="width: 100%; padding: 10px; border-top: 2px black solid;">
+	
+	<tr class="blank_row">
+    <td colspan="6"> </td>
+    </tr>
+	<tr>
+		<td><strong> </strong></td>
+		<td><strong>About Us!</strong></td>
+		<td><strong>Explore</strong>!</td>
+		<td><strong>Know More!</strong></td>
+		<td><strong>Contact Us!</strong></td>
+		<td><strong> </strong></td>
+	</tr>
+
+	<tr>
+		<td><strong> </strong></td>
+		<td><a href="">About Us</a></td>
+		<td><a href="">View Photo Gallery</a></td>
+		<td><a href="">Read Latest News</a></td>
+		<td><a href=""><img src=""></a></td>
+		<td><strong> </strong></td>
+	</tr>
+
+	<tr>
+		<td><strong> </strong></td>
+		<td><a href="">Aim & Objective</a></td>
+		<td><a href="">View Video Gallery</a></td>
+		<td><a href="">Holiday List</a></td>
+		<td><strong> </strong></td>
+	</tr>
+	<tr>
+		<td><strong> </strong></td>
+		<td><a href="">Principal's Message</a></td>
+		<td><a href="">View Event Section</a></td>
+		<td><a href="">Library</a></td>
+		<td><strong> </strong></td>
+	</tr>
+
+	<tr class="blank_row">
+    <td colspan="4"> </td>
+    </tr>
+</table>
+</body>
+</html>
